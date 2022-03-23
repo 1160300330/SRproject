@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.StockInfoDao">
+    <select id="getStockInfoList" parameterType="String" resultType="com.pojo.StockInfo">
+        select * from srproject.${_parameter} limit 0,10
+    </select>
+    <update id="createTable" parameterType="String">
+        CREATE TABLE `${id}`(
+                                `date` datetime DEFAULT NULL,
+                                `closing_price` double DEFAULT NULL,
+                                `highese_price` double DEFAULT NULL,
+                                `lowest_price` double DEFAULT NULL,
+                                `opening_price` double DEFAULT NULL,
+                                `previous_close` double DEFAULT NULL,
+                                `ups_and_downs` double DEFAULT NULL,
+                                `quote_change` double DEFAULT NULL,
+                                `turnover_rate` double DEFAULT NULL,
+                                `volume` bigint DEFAULT NULL,
+                                `turnover` double DEFAULT NULL,
+                                `ttmc` double DEFAULT NULL,
+                                `cmc` double DEFAULT NULL
+        )ENGINE = INNODB DEFAULT CHARSET =utf8;
+    </update>
+</mapper>
