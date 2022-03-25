@@ -19,6 +19,11 @@ public class StockServiceImpl implements StockService {
     }
 
     @Override
+    public List<StockInfo> queryByNum(String id, int num) {
+        return stockInfoDao.getStockInfoListLimited(id,num);
+    }
+
+    @Override
     public StockInfo queryById(String id) {
         return null;
     }

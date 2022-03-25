@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface StockService {
     List<StockInfo> queryAll(String id);
+    List<StockInfo> queryByNum(String id,int num);
     StockInfo queryById(String id);//查
 }

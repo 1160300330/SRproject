@@ -5,20 +5,21 @@
 %>
 <html>
 <head>
-    <title>股票历史10条</title>
+    <title>股票历史记录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 引入 Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-
     <div class="row clearfix">
         <div class="col-md-12 column">
             <table class="table table-hover table-striped">
                 <thead>
                 <tr>
-                    <th>股票代码</th>
+                    <th>日期</th>
+                    <th>代码</th>
+                    <th>名称</th>
                     <th>收盘价</th>
                     <th>最高价</th>
                     <th>最低价</th>
@@ -35,7 +36,9 @@
                 <tbody>
                 <c:forEach var="StockInfo" items="${requestScope.get('list')}" varStatus="status">
                     <tr>
+                        <td>${StockInfo.datetime}</td>
                         <td>${requestScope.get('id')}</td>
+                        <td>${requestScope.get('Name')}</td>
                         <td>${StockInfo.closing_price}</td>
                         <td>${StockInfo.highese_price}</td>
                         <td>${StockInfo.lowest_price}</td>

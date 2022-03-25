@@ -6,6 +6,10 @@
     <select id="getStockInfoList" parameterType="String" resultType="com.pojo.StockInfo">
         select * from srproject.${_parameter} limit 0,10
     </select>
+
+    <select id="getStockInfoListLimited" resultType="com.pojo.StockInfo">
+        select * from srproject.${id} limit 0,${limit}
+    </select>
     <update id="createTable" parameterType="String">
         CREATE TABLE `${id}`(
                                 `date` datetime DEFAULT NULL,

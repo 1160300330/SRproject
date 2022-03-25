@@ -37,7 +37,7 @@
         </div>
     </div>
 </div>
-<br><br>
+<br>
 <h3>
     <a href="${path }/stock/stock">股票界面</a>
 </h3>

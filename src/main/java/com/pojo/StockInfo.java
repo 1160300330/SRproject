@@ -1,9 +1,12 @@
 package com.pojo;
 
+import lombok.Data;
+
 import java.sql.Date;
 
+@Data
 public class StockInfo {
-    Date datetime;
+    String datetime;
     double closing_price;
     double highese_price;
     double lowest_price;
@@ -16,11 +19,11 @@ public class StockInfo {
     double turnover;
     double ttmc;
     double cmc;
-    public Date getDatetime() {
+    public String getDatetime() {
         return datetime;
     }
 
-    public void setDatetime(Date datetime) {
+    public void setDatetime(String datetime) {
         this.datetime = datetime;
     }
 
