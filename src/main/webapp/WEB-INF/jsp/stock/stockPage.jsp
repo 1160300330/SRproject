@@ -12,7 +12,6 @@
     <style type="text/css">
         a {
             text-decoration: none;
-            color: black;
             font-size: 18px;
         }
 
@@ -22,14 +21,15 @@
             margin: 100px auto;
             text-align: center;
             line-height: 38px;
-            background: deepskyblue;
             border-radius: 4px;
         }
 
         h1{
             text-align: center;
         }
-
+        h2{
+            text-align: center;
+        }
         form
         {
             text-align: center;
@@ -40,23 +40,36 @@
 <h1>
     股票界面
 </h1>
+    <h2>
+        按代码查询
+    </h2>
     <form action="" name="stockIDForm">
         股票代码：<input type="text" name="StockID"><br>
+        时间格式：YYYY-MM-DD<br>
         起始时间：<input type="text" name="StartDate"><br>
         终止时间：<input type="text" name="EndDate"><br>
         <input type="button" value="按时间查询" onclick="queryByIDDate()"><br>
         查询条数：<input type="text" name="Rows"><br>
         <input type="button" value="按条数查询" onclick="queryByIDNum()"><br>
     </form><br>
-
+    <h2>
+        按名称查询
+    </h2>
     <form action="" name="stockNameForm">
         股票名称：<input type="text" name="StockName"><br>
+        时间格式：YYYY-MM-DD<br>
         起始时间：<input type="text" name="StartDate"><br>
         终止时间：<input type="text" name="EndDate"><br>
         <input type="button" value="按时间查询" onclick="queryByNameDate()"><br>
         查询条数：<input type="text" name="Rows"><br>
         <input type="button" value="按条数查询" onclick="queryByNameNum()"><br>
     </form>
+    <h2>
+        <a href="${path }/stock/realtimeStock">实时股票交易市场</a>
+    </h2>
+    <h2>
+        <a href="${path }/stock/allStock">实时所有股票行情</a>
+    </h2>
 
     <script type="text/javascript">
         function queryByIDDate() {
@@ -85,15 +98,5 @@
         }
     </script>
 
-
-
-
-
-<h3>
-    <a href="${path }/stock/realtimeStock">实时交易情况</a>
-</h3>
-<h3>
-    <a href="${path }/stock/allStock">实时所有股票</a>
-</h3>
 </body>
 </html>

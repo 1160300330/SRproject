@@ -24,6 +24,12 @@ public class StockServiceImpl implements StockService {
     }
 
     @Override
+    public List<StockInfo> queryByTime(String id, String t1, String t2) {
+
+        return stockInfoDao.getStockInfoListByDate(id,"\'"+t1+"\'","\'"+t2+"\'");
+    }
+
+    @Override
     public StockInfo queryById(String id) {
         return null;
     }

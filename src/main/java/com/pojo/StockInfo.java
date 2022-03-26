@@ -1,29 +1,32 @@
 package com.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.sql.Date;
 
 @Data
 public class StockInfo {
-    String datetime;
-    double closing_price;
-    double highese_price;
-    double lowest_price;
-    double opening_price;
-    double previous_close;
-    double ups_and_downs;
-    double quote_change;
-    double turnover_rate;
-    double volume;
-    double turnover;
-    double ttmc;
-    double cmc;
-    public String getDatetime() {
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",locale = "zh",timezone = "GMT+8")
+    private Date datetime;
+    private double closing_price;
+    private double highese_price;
+    private double lowest_price;
+    private double opening_price;
+    private double previous_close;
+    private double ups_and_downs;
+    private double quote_change;
+    private double turnover_rate;
+    private double volume;
+    private double turnover;
+    private double ttmc;
+    private double cmc;
+
+    public Date getDatetime() {
         return datetime;
     }
 
-    public void setDatetime(String datetime) {
+    public void setDatetime(Date datetime) {
         this.datetime = datetime;
     }
 

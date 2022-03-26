@@ -13,6 +13,9 @@
             color: black;
             font-size: 18px;
         }
+        h1{
+            text-align: center;
+        }
 
         h3 {
             width: 180px;
@@ -20,7 +23,6 @@
             margin: 100px auto;
             text-align: center;
             line-height: 38px;
-            background: deepskyblue;
             border-radius: 4px;
         }
     </style>
@@ -31,7 +33,7 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    SSM股票交易
+                    股票交易市场
                 </h1>
             </div>
         </div>
