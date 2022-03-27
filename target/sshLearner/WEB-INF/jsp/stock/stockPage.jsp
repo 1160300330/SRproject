@@ -64,12 +64,26 @@
         查询条数：<input type="text" name="Rows"><br>
         <input type="button" value="按条数查询" onclick="queryByNameNum()"><br>
     </form>
+
+
     <h2>
-        <a href="${path }/stock/realtimeStock">实时股票交易市场</a>
+        实时股票行情查询
     </h2>
+
+    <form action="" name="RealtimeStockForm">
+        股票代码：<input type="text" name="StockID"><br>
+        <input type="button" value="查询" onclick="queryByIDRealtime()"><br>
+        <input type="button" value="时分k"  onclick="queryByIDRealtimePicMin()"><br>
+        <input type="button" value="日k"  onclick="queryByIDRealtimePicDaily()"><br>
+        <input type="button" value="周k"  onclick="queryByIDRealtimePicWeek()"><br>
+        <input type="button" value="月k"  onclick="queryByIDRealtimePicMonth()"><br>
+    </form>
+
     <h2>
-        <a href="${path }/stock/allStock">实时所有股票行情</a>
+        <a href="http://data.eastmoney.com/center/">实时所有股票行情</a>
     </h2>
+
+
 
     <script type="text/javascript">
         function queryByIDDate() {
@@ -96,6 +110,42 @@
             form.method = "post";
             form.submit();
         }
+        function queryByIDRealtime()
+        {
+            var form = document.forms[2];
+            form.action = "${path}/stock/realtimeStock";
+            form.method = "post";
+            form.submit();
+        }
+        function queryByIDRealtimePicDaily()
+        {
+            var form = document.forms[2];
+            form.action = "${path}/stock/realtimeStockPicDaily";
+            form.method = "post";
+            form.submit();
+        }
+        function queryByIDRealtimePicMin()
+        {
+            var form = document.forms[2];
+            form.action = "${path}/stock/realtimeStockPicMin";
+            form.method = "post";
+            form.submit();
+        }
+        function queryByIDRealtimePicWeek()
+        {
+            var form = document.forms[2];
+            form.action = "${path}/stock/realtimeStockPicWeek";
+            form.method = "post";
+            form.submit();
+        }
+        function queryByIDRealtimePicMonth()
+        {
+            var form = document.forms[2];
+            form.action = "${path}/stock/realtimeStockPicMonth";
+            form.method = "post";
+            form.submit();
+        }
+
     </script>
 
 </body>

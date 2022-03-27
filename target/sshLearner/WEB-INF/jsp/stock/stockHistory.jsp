@@ -24,6 +24,7 @@
                     <th>最高价</th>
                     <th>最低价</th>
                     <th>开盘价</th>
+                    <th>前收盘</th>
                     <th>涨跌额</th>
                     <th>涨跌幅</th>
                     <th>换手率</th>
@@ -45,6 +46,7 @@
                         <td>${StockInfo.opening_price}</td>
                         <td>${StockInfo.previous_close}</td>
                         <td>${StockInfo.ups_and_downs}</td>
+                        <td>${StockInfo.quote_change}</td>
                         <td>${StockInfo.turnover_rate}</td>
                         <td>${StockInfo.volume}</td>
                         <td>${StockInfo.turnover}</td>

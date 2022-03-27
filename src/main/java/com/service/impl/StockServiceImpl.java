@@ -30,7 +30,7 @@ public class StockServiceImpl implements StockService {
     }
 
     @Override
-    public StockInfo queryById(String id) {
+    public StockInfo queryByIdRealTime(String id) {
         return null;
     }
 
