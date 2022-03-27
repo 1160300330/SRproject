@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false"%>
+<%@ page contentType="text/html;charset=gb2312" language="java" isELIgnored="false"%>
 <%
     pageContext.setAttribute("path", request.getContextPath());
 %>
 <html>
 <head>
-    <title>è‚¡ç¥¨åŽ†å²è®°å½•</title>
+    <title>¹ÉÆ±ÀúÊ·¼ÇÂ¼</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- å¼•å…¥ Bootstrap -->
+    <!-- ÒýÈë Bootstrap -->
     <!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
 </head>
 <body>
@@ -17,21 +17,21 @@
             <table class="table table-hover table-striped">
                 <thead>
                 <tr>
-                    <th>æ—¥æœŸ</th>
-                    <th>ä»£ç </th>
-                    <th>åç§°</th>
-                    <th>å½“å‰ä»·æ ¼</th>
-                    <th>æœ€é«˜ä»·</th>
-                    <th>æœ€ä½Žä»·</th>
-                    <th>å¼€ç›˜ä»·</th>
-                    <th>å‰æ”¶ç›˜</th>
-                    <th>æ¶¨è·Œé¢</th>
-                    <th>æ¶¨è·Œå¹…</th>
-                    <th>æ¢æ‰‹çŽ‡</th>
-                    <th>æˆäº¤é‡(ä¸‡)</th>
-                    <th>æˆäº¤é‡‘é¢(ä¸‡)</th>
-                    <th>æ€»å¸‚å€¼</th>
-                    <th>æµé€šå¸‚å€¼</th>
+                    <th>ÈÕÆÚ</th>
+                    <th>´úÂë</th>
+                    <th>Ãû³Æ</th>
+                    <th>µ±Ç°¼Û¸ñ</th>
+                    <th>×î¸ß¼Û</th>
+                    <th>×îµÍ¼Û</th>
+                    <th>¿ªÅÌ¼Û</th>
+                    <th>Ç°ÊÕÅÌ</th>
+                    <th>ÕÇµø¶î</th>
+                    <th>ÕÇµø·ù</th>
+                    <th>»»ÊÖÂÊ</th>
+                    <th>³É½»Á¿(Íò)</th>
+                    <th>³É½»½ð¶î(Íò)</th>
+                    <th>×ÜÊÐÖµ</th>
+                    <th>Á÷Í¨ÊÐÖµ</th>
                 </tr>
                 </thead>
                 <tbody>

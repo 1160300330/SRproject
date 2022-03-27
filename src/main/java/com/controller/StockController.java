@@ -128,7 +128,7 @@ public class StockController {
         while ((ss = rd.read()) != -1) {
             sb.append((char) ss);
         }
-        return new String(sb.toString().getBytes(StandardCharsets.ISO_8859_1),StandardCharsets.UTF_8); //返回String格式的sb对象
+        return sb.toString(); //返回String格式的sb对象
     }
 
     @RequestMapping("/realtimeStockPicDaily")
